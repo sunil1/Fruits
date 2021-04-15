@@ -1,0 +1,42 @@
+#%RAML 1.0
+title: FruitShop
+
+
+/price:
+  get:
+    queryParameters:
+      fruit: string
+      quality: string
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {"price": 200}
+            
+
+
+/inventory:
+  patch:
+    body:
+      application/json:
+        example:
+          {"Apple": 5000}
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {"update": "success",
+              "totalAvailable": 4000}
+      404:
+        body:
+          application/json:
+            
+        
+
+
+
+
+
+              
