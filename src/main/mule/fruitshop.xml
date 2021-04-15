@@ -116,7 +116,7 @@ output application/json
 output application/json
 ---
 {
-  price: 200
+  price: 500
 }]]></ee:set-payload>
             </ee:message>
         </ee:transform>
